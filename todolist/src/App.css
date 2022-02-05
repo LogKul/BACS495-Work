@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.App-header {
+  /*background-color: #282c34;*/
+  background-color: #330044;
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(8px + 1vmin);
+  color: white;
+}
+
+.App-content {
+  text-align: center;
+  font-size: calc(8px + 1vmin);
+}
+
+.Item-form {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: solid white 4px;
+  border-radius: 15px;
+  width: 60%;
+}
+
+.Activity {
+  color: yellow;
+}
+
+ul {
+  /*list-style-type: none;*/
+}
+
+li {
+  margin: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: solid orange 3px;
+  border-radius: 15px;
+  width: 40%;
+  text-align: left;
+}
+
+button {
+  height: 3vh;
+  width: 6vh;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
