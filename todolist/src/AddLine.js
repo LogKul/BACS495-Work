@@ -36,7 +36,7 @@ function AddLine() {
             </form>
             <ul>
                 {todo_items.map(item => (
-                    <li key={item}>
+                    <li>
                         <button type="button" id={item} onClick={handleRemove}>
                             Done
                         </button>
