@@ -9,7 +9,6 @@ function App() {
         <h1>To-Do Website</h1>
       </header>
       <AddLine />
-      <footer className="App-footer"></footer>
     </div>
   );
 }

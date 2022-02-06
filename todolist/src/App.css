@@ -13,7 +13,7 @@ body {
 .App-header {
   /*background-color: #282c34;*/
   background-color: #330044;
-  min-height: 8vh;
+  min-height: 8%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,16 +21,11 @@ body {
   color: white;
 }
 
-.App-footer {
-  background-color: #330044;
-  margin-top: 8vh;
-  height: 8vh;
-}
-
 .App-content {
   text-align: center;
   font-size: calc(8px + 1vmin);
-  min-height: 64vh;
+  min-height: 65%;
+  padding-bottom: 128px;
 }
 
 .Item-form {
@@ -39,9 +34,14 @@ body {
   margin-bottom: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
-  border: solid white 4px;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: solid white 1vmax;
   border-radius: 15px;
   width: 60%;
+  max-width: 35vw;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .Activity {
@@ -52,18 +52,26 @@ li {
   margin: auto;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  border: solid orange 3px;
+  margin-right: 33%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: solid orange 0.5vmax;
   border-radius: 15px;
-  width: 40%;
+  max-width: 30vw;
   text-align: left;
+  font-size: 20px;
 }
 
 button {
-  height: 3vh;
-  width: 6vh;
+  height: 36px;
+  width: 72px;
   margin-left: 5px;
   margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
