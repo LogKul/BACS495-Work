@@ -4,9 +4,9 @@ var router = express.Router();
 var students = [
   { id: 1, firstName: "Jeff" },
   { id: 2, firstName: "Jesse" },
-  { id: 3, firstName: "Lmaoer" },
-  { id: 4, firstName: "Pinkman" },
-  { id: 5, firstName: "Jmaoer" }
+  { id: 3, firstName: "Harolde" },
+  { id: 4, firstName: "Derek" },
+  { id: 5, firstName: "Funny" }
 ]
 
 /* GET users listing. */
