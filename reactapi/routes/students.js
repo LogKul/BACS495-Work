@@ -89,11 +89,12 @@ router.delete('/:id', function (req, res, next) {
 /*test*/
 router.post('/', function (req, res, next) {
   const user = {
-    "id": req.body.id
-    "name": req.body.name
+    "name": req.body.name,
+    "type": req.body.type
   }
   var db = req.app.locals.db
-  db.collection(dbmaybe);
+  db.collection("users").insertOne(user);
   res.send("User inserted")
-}
+});
+
 module.exports = router;

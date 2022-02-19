@@ -9,6 +9,7 @@ var debug = require('debug')('reactapi:server');
 var http = require('http');
 var MongoClient = require('mongodb').MongoClient;
 
+
 /**
  * Get port from environment and store in Express.
  */
@@ -16,14 +17,19 @@ var MongoClient = require('mongodb').MongoClient;
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
-MongoClient.connect("url", function (err, client)){
+
+/**
+ * Connect to MongoDB Database
+ */
+
+/* logan, X7JagcafHPTpii9q */
+MongoClient.connect("mongodb+srv://logan:X7JagcafHPTpii9q@schoolforumcluster.i3hzm.mongodb.net/usersdb?retryWrites=true&w=majority", function (err, client) {
   if (err) throw err;
-  db = client.db("studentsdb");
+  db = client.db("usersdb");
   app.locals.db = db;
   start_server();
   console.log("Server and database started");
-}
-
+});
 
 
 /**
@@ -34,9 +40,9 @@ var server;
 function start_server() {
   server = http.createServer(app);
 
-  ` server.listen(port);
+  server.listen(port);
   server.on('error', onError);
-  server.on('listening', onListening);`
+  server.on('listening', onListening);
 }
 
 /**
