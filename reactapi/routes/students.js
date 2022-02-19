@@ -1,4 +1,5 @@
 var express = require('express');
+const { report } = require('../app');
 var router = express.Router();
 
 var students = [
@@ -85,4 +86,14 @@ router.delete('/:id', function (req, res, next) {
   }
 });
 
+/*test*/
+router.post('/', function (req, res, next) {
+  const user = {
+    "id": req.body.id
+    "name": req.body.name
+  }
+  var db = req.app.locals.db
+  db.collection(dbmaybe);
+  res.send("User inserted")
+}
 module.exports = router;
